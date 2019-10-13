@@ -2,8 +2,7 @@ class Dog
   # code goes here
   @@all = []
   
-  attr_accessor :owner
-  attr_reader :name, :mood
+  attr_reader :name, :mood, :owner
   
   def initialize(name, owner)
     @name = name 
@@ -18,5 +17,9 @@ class Dog
   
   def mood=(mood)
     @mood = mood
+  end
+  
+  def owner=(owner)
+    @owner = owner
   end
 end
