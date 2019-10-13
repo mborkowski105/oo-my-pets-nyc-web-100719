@@ -47,7 +47,7 @@ class Owner
   
   def dogs
     all_dogs = dog_collect
-    return all_dog.select do |dog|
+    return all_dogs.select do |dog|
       dog.owner == self
     end
   end
