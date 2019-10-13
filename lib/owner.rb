@@ -26,6 +26,15 @@ class Owner
     Cat.new(name, self)
   end
   
+  def cat_collect
+    return Cat.all
+  end
   
+  def cats
+    all_cats = cat_collect
+    all_cats.map do |cat|
+      cat
+    end
+  end
   
 end
