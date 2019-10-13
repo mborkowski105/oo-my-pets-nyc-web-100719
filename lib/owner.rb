@@ -52,11 +52,22 @@ class Owner
     end
   end
   
+  def feed_cats
+    my_cats = self.cats
+    my_cats.each do |cat| 
+      cat.mood = "happy"
+    end
+  end
+  
   def walk_dogs
     my_dogs = self.dogs
     my_dogs.each do |dog| 
       dog.mood = "happy"
     end
+  end
+  
+  def list_pets 
+    return dogs.count + cats.count
   end
   
 end
