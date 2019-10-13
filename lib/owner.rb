@@ -18,6 +18,10 @@ class Owner
     return @@all.count
   end
   
+  def self.reset_all
+    @@all = []
+  end
+  
   def say_species
     return "I am a #{species}."
   end
