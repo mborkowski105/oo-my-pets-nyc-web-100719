@@ -32,8 +32,8 @@ class Owner
   
   def cats
     all_cats = cat_collect
-    all_cats.map do |cat|
-      cat
+    return all_cats.select do |cat|
+      cat.owner == self
     end
   end
   
