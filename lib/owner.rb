@@ -38,7 +38,10 @@ class Owner
   end
   
   def feed_cats
-    
+    my_cats = self.cats 
+    my_cats.each do |cat| 
+      
+    end
   end
   
 end
