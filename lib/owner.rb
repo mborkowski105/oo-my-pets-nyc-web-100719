@@ -70,4 +70,13 @@ class Owner
     return "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
   end
   
+  def sell_pets 
+    my_dogs = self.dogs
+    my_cats = self.cats
+    
+    my_dogs.each do |dog|
+      dog.
+    end
+  end
+  
 end
