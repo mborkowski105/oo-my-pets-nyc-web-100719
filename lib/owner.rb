@@ -75,7 +75,7 @@ class Owner
     my_cats = self.cats
     
     my_dogs.each do |dog|
-      dog.
+      dog.owner = nil
     end
   end
   
