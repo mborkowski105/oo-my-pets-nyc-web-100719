@@ -26,8 +26,16 @@ class Owner
     Cat.new(name, self)
   end
   
+  def buy_dog(name)
+    Dog.new(name, self)
+  end
+  
   def cat_collect
     return Cat.all
+  end
+  
+  def dog_collect
+    return Dog.all
   end
   
   def cats
