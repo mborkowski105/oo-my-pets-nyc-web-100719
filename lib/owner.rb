@@ -45,10 +45,17 @@ class Owner
     end
   end
   
-  def feed_cats
-    my_cats = self.cats 
-    my_cats.each do |cat| 
-      cat.mood = "happy"
+  def dogs
+    all_dogs = dog_collect
+    return all_dog.select do |dog|
+      dog.owner == self
+    end
+  end
+  
+  def feed_dogs
+    my_dogs = self.dogs
+    my_dogs.each do |dog| 
+      dog.mood = "happy"
     end
   end
   
